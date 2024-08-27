@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="Logo.png">
+    </header>
+    <main class="container">
+        <section class="container__contenido">
+            <textarea type="text" id="entradaTexto" placeholder="Ingrese el texto aquí" class="container__contenido__input"></textarea>
+            <div class="container__contenido__advert">
+                <img src="Vector.png" class="container__contenido__advert__img">
+                <p class="container__contenido__texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="container__botones">
+                <button onclick="encriptar()" class="container__contenido__boton1">Encriptar</button>
+                <button onclick="desencriptar()" class="container__contenido__boton2">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="container__encriptado">
+            <img class="container__encriptado__imagen" src="Muñeco.png" alt="Personaje con lupa con curiosidad hacia lo encriptado">
+            <p class="container__encriptado__texto1">Ningún mensaje fue encontrado</p>
+            <p class="container__encriptado__texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+        <section>
+            <textarea class="container__encriptado__salida" id="salidaTexto" readonly></textarea>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por David Ramírez - 2024</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
